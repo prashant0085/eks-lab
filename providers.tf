@@ -3,7 +3,7 @@ terraform {
     bucket  = "fab-tfstate"
     key     = "eks-lab"
     region  = "us-east-2"
-    profile = "bluesentry-sandbox"
+    profile = "your-aws-profile"
     encrypt = true
   }
 
@@ -24,7 +24,7 @@ terraform {
 # Configure the AWS Provider
 provider "aws" {
   region  = "us-east-2"
-  profile = "bluesentry-sandbox"
+  profile = "your-aws-profile"
 }
 
 # Configure the Helm provider
